@@ -1,0 +1,9 @@
+Useful links
+
+http://jeffreypalermo.com/blog/the-onion-architecture-part-1/
+http://jeffreypalermo.com/blog/the-onion-architecture-part-2/
+http://jeffreypalermo.com/blog/the-onion-architecture-part-3/
+http://jeffreypalermo.com/blog/onion-architecture-part-4-after-four-years/
+
+//go nemam gledano no pretpostavuvam deka e odlicno, channel9 imaat odlicni videa
+https://channel9.msdn.com/Events/aspConf/aspConf/ASP-NET-MVC-Solution-Best-Practices
