@@ -13,7 +13,7 @@ namespace Cinema.Infrastructure.Data
         public CinemaDbContext(string cnnString)
             :base(cnnString)
         {
-
+            Database.SetInitializer<CinemaDbContext>(new DataEntitiesInitializer());
         }
         public DbSet<User> Users { get; set; }
     }

@@ -7,3 +7,11 @@ http://jeffreypalermo.com/blog/onion-architecture-part-4-after-four-years/
 
 //go nemam gledano no pretpostavuvam deka e odlicno, channel9 imaat odlicni videa
 https://channel9.msdn.com/Events/aspConf/aspConf/ASP-NET-MVC-Solution-Best-Practices
+
+https://www.develop.com/onionarchitecture
+http://www.codeproject.com/Articles/808400/Onion-Architecture-in-ASP-Net-MVC
+
+basic example
+http://www.c-sharpcorner.com/UploadFile/dhananjaycoder/step-by-step-implementing-onion-architecture-in-Asp-Net-mvc/
+
+http://debugmode.net/2014/09/12/refactoring-the-asp-net-mvc-application-to-the-onion-architecture/
