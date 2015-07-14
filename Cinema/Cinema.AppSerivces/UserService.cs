@@ -33,5 +33,11 @@ namespace Cinema.AppSerivces
             _userRepository.Add(entity);
             _userRepository.Save();
         }
+
+        public bool IsAdmin(string username)
+        {
+            var foundUser = _userRepository.GetBy(x => x.Username == username && x.IsAdmin && !x.Deleted).FirstOrDefault();
+            return foundUser != null ? true : false;
+        }
     }
 }

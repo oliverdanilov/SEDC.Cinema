@@ -14,5 +14,10 @@ namespace Cinema.Admin.Controllers
         {
             return View();
         }
+        [CustomAuthorize]
+        public ActionResult OnlyAdmin()
+        {
+            return View();
+        }
     }
 }
