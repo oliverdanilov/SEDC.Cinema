@@ -9,5 +9,6 @@ namespace Cinema.Core.Interfaces
 {
     public interface IUserRepository :IBaseRepository<User>
     {
+        List<User> Search(string username, string name = "", string surname = "");
     }
 }

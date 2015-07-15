@@ -32,5 +32,20 @@ namespace Cinema.Admin.Controllers
             }
             return View(model);
         }
+        public ActionResult Register()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Register(RegisterDto model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+            _userService.RegisterUser(model);
+            FormsAuthentication.SetAuthCookie(model.Username, false);
+            return RedirectToAction("Index", "Home");
+        }
     }
 }

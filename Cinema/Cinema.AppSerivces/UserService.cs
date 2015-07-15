@@ -25,11 +25,13 @@ namespace Cinema.AppSerivces
             return foundUser != null ? true : false;
         }
 
-        public void RegisterUser(UserDto dto)
+        public void RegisterUser(RegisterDto dto)
         {
             User entity = new User();
             entity.Username = dto.Username;
             entity.Password = Utils.GeneratePasswordHash(dto.Password);
+            entity.Name = dto.Name;
+            entity.Surname = dto.Surname;
             _userRepository.Add(entity);
             _userRepository.Save();
         }

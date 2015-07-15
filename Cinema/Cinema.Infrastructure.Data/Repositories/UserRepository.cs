@@ -15,5 +15,18 @@ namespace Cinema.Infrastructure.Data.Repositories
         {
 
         }
+
+        public List<User> Search(string username, string name = "", string surname = "")
+        {
+            var _list = _context.Users.Where(x=>x.Username.Contains(username)).AsEnumerable();
+
+            if (name != "")
+                _list = _list.Where(x => x.Name.Contains(name));
+
+            if (surname != "")
+                _list = _list.Where(x => x.Surname.Contains(surname));
+
+            return _list.ToList();
+        }
     }
 }
