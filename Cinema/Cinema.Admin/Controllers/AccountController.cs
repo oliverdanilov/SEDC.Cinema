@@ -32,6 +32,12 @@ namespace Cinema.Admin.Controllers
             }
             return View(model);
         }
+
+        public ActionResult LogOut()
+        {
+            FormsAuthentication.SignOut();
+            return RedirectToAction("Login");
+        }
         public ActionResult Register()
         {
             return View();
@@ -44,6 +50,7 @@ namespace Cinema.Admin.Controllers
                 return View(model);
             }
             _userService.RegisterUser(model);
+
             FormsAuthentication.SetAuthCookie(model.Username, false);
             return RedirectToAction("Index", "Home");
         }

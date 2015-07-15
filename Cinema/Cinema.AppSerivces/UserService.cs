@@ -17,6 +17,12 @@ namespace Cinema.AppSerivces
         {
             _userRepository = userRepository;
         }
+        /// <summary>
+        /// addas
+        /// </summary>
+        /// <param name="username">dsada</param>
+        /// <param name="password">dadsa</param>
+        /// <returns></returns>
         public bool Authenticate(string username, string password)
         {
             password = Utils.GeneratePasswordHash(password);
